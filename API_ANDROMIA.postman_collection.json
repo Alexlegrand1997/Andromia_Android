@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "8f5a579c-0888-4520-b7ea-d72b2776017b",
+		"name": "API_ANDROMIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23246412"
+	},
+	"item": [
+		{
+			"name": "Create Explorateurs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tom@gmail.com\",\r\n    \"username\": \"tera\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/explorateurs",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"explorateurs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tom@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/explorateurs/login",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"explorateurs",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbG83QGFsbG8uY2EiLCJpYXQiOjE2OTg5NDAwODUsImV4cCI6MTY5ODk2MTY4NSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.O4qHZFejDkL6DdG7mGHb5PaELzGm-lINdPTWCp7FRgc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "refreshJWT",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbG83QGFsbG8uY2EiLCJpYXQiOjE2OTg5NDAwODUsImV4cCI6MTY5ODk2MTY4NSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.O4qHZFejDkL6DdG7mGHb5PaELzGm-lINdPTWCp7FRgc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/explorateurs/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"explorateurs",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Portal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbG83QGFsbG8uY2EiLCJpYXQiOjE2OTkzNzYwNDYsImV4cCI6MTY5OTM5NzY0NiwiaXNzIjoiaHR0cDovL3Byb2plY3RhYXouZGRuc2ZyZWUuY29tOjMwMDAifQ.gqis8RZbTateyzCsSaMzrfYegcTky_4mWHJoUFO5b-k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/explorations/K@[5449:E5E3:98B6:0779:ACA9]",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"explorations",
+						"K@[5449:E5E3:98B6:0779:ACA9]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Exploration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user to ally",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbG84QGFsbG8uY2EiLCJpYXQiOjE2OTkzODQ3MTAsImV4cCI6MTY5OTM4ODMxMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.yZhW9jslp1bacaUofP2YMFYN3ky1G-8a497n7QYzcv4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/allies:654a9436c06f314912d3c71c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"allies:654a9436c06f314912d3c71c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Allies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ally",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Booster",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRvbUBnbWFpbC5jb20iLCJpYXQiOjE3MDAxNTE5MTEsImV4cCI6MTcwMDE1NTUxMSwiaXNzIjoiaHR0cDovL3Byb2plY3RhYXouZGRuc2ZyZWUuY29tOjkwMDAifQ.SjZEYkObLZuEiwOo7Yv3jywgy_81Yzp93PDIlrIqwxE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://projectaaz.ddnsfree.com:9000",
+			"type": "string"
+		}
+	]
+}

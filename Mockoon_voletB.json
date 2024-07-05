@@ -1,0 +1,574 @@
+{
+  "uuid": "df7c2e99-c16e-4207-84d4-3e9e79c82581",
+  "lastMigration": 29,
+  "name": "Project",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "93a240cf-67b5-46b0-9d91-9727ee8668a3",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "explorateurs",
+      "responses": [
+        {
+          "uuid": "78a9096d-2df5-46ca-be03-e9290d8e276f",
+          "body": "{\n  \"account\": {\n        \"email\": \"a@aabcdefhudsahbdshbsugaaabvaasaasdasaa\",\n        \"username\": \"Aleassdnkls;bkjsbkj;sdasasdx\",\n        \"uuid\": \"a50975dd-9cc2-422c-8363-b33d0495dff9\",\n        \"href\": \"http://10.0.2.2:3002/accounts/651341a62367456080f2a054\"\n    },\n    \"tokens\": {\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzY0NDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.twlwDxGgS_lEEMgMeP2Xtq5LHeAqrTcZ6JvVouWaIIM\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzgyNDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.XGXIbhCpDzHOjW-o9BEPUHNnOOVBc7lzoBSZC2NDSsE\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "07afb159-c7ad-4fe0-b086-4497897adb79",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "aed6c458-c221-442f-87d9-81f59a7f1f9b",
+          "body": "{\n  \"account\": {\n    \"email\": \"alex@hotmail.com\",\n    \"username\": \"alex\",\n    \"uuid\": \"a50975dd-9cc2-422c-8363-b33d0495dff9\",\n    \"inox\": 10,\n    \"allies\": \"http://10.0.2.2:3002/explorateurs/1/allies\",\n    \"location\": \"Montreal\",\n    \"href\": \"http://10.0.2.2:3002/accounts/651341a62367456080f2a054\",\n    \"elements\": [\n      {\n        \"element\": \"a\",\n        \"quantity\": 10\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      }\n    ],\n    \"boosters\": [\n      {\n        \"id\": 1,\n        \"price\": 45,\n        \"rarity\": \"common\",\n        \"buyMe\": \"http://10.0.2.2:3002/boosters/1\"\n      },\n      {\n        \"id\": 2,\n        \"price\": 80,\n        \"rarity\": \"uncommon\",\n        \"buyMe\": \"http://10.0.2.2:3002/boosters/2\"\n      }\n    ]\n  },\n  \"tokens\": {\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzY0NDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.twlwDxGgS_lEEMgMeP2Xtq5LHeAqrTcZ6JvVouWaIIM\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzgyNDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.XGXIbhCpDzHOjW-o9BEPUHNnOOVBc7lzoBSZC2NDSsE\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "username",
+              "value": "alex",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "body",
+              "modifier": "password",
+              "value": "password",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "8da192c4-9c84-4177-b67e-0db94d02d721",
+          "body": "{\n  \"Unauthorized\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c7f32c92-b1ce-4cc6-a516-4e0ff8ceeb8b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "logout",
+      "responses": [
+        {
+          "uuid": "e2031f87-27a0-4973-bfa3-da4057391dda",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "0c9d9b74-7ecc-4ba5-95ca-fe8f83838344",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "52e16b31-9f4d-43ac-ac09-ca85f72be0f5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/1/allies",
+      "responses": [
+        {
+          "uuid": "aab52155-7e28-4809-807c-edceca6aaa01",
+          "body": "[\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test1\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/knight.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test2\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/king.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test3\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/amazon.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test4\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/barbarian.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test5\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/elf.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   }\r\n   ,\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test6\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/hell-knight.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test7\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/anubis.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test8\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/assassin.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   },\r\n   {\r\n      \"uuid\":\"\",\r\n      \"name\":\"Test9\",\r\n      \"essence\":0,\r\n      \"asset\":\"https://assets.andromia.science/allies/archer.png\",\r\n      \"stat\":{\r\n         \"life\":1,\r\n         \"speed\":5,\r\n         \"power\":9,\r\n         \"shield\":10\r\n      },\r\n      \"archivedIndex\":0,\r\n      \"crypto\":{\r\n         \"hash\":\"\",\r\n         \"signature\":\"\"\r\n      },\r\n      \"affinity\":\"\",\r\n      \"href\":\"https\",\r\n      \"books\":[\r\n         \"white\",\r\n         \"blue\"\r\n      ],\r\n      \"kernel\":[\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\",\r\n         \"\"\r\n      ]\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "0e282a8d-0470-426e-936f-0c8cf48b4585",
+          "body": "{\n  \"NOT FOUND\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a1698f30-6af8-4bef-8746-dab578a87fc7",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/1/allies/1",
+      "responses": [
+        {
+          "uuid": "a37241ca-fa03-4284-a734-0a3b90df8f58",
+          "body": "{\n  {\n  \"stats\": {\n    \"life\": 0,\n    \"speed\": 0,\n    \"power\": 0,\n    \"shield\": 0,\n  },\n  \"crypto\": {\n    \"hash\": \"\",\n    \"signature\": \"\"\n  },\n  \"books\": [\"\", \"\"],\n  \"kernel\": [\"\", \"\", \"\", \"\", \"\"],\n  \"archivedIndex\": 0,\n  \"name\": \"\",\n  \"uuid\": \"\",\n  \"affinity\": \"\",\n  \"essence\": 0,\n  \"href\": \"https\",\n  \"assets\": \"https\",\n  \"createdAt\": \"2023-01-01T00:00:00.000Z\",\n  \"updatedAt\":\"2023-01-01T00:00:00.000Z\",\n  \"expireAt\": \"2023-01-01T00:00:00.000Z\"\n  \n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "4a1a31a6-434a-41ca-9662-eb578ab8b67f",
+          "body": "{\n  \"NOT FOUND\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "38f14011-98c4-4fce-9308-1ef9e6d27aa3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/1/elements",
+      "responses": [
+        {
+          "uuid": "e9cd6442-f7f4-46f3-b7a7-74ee0a1d207c",
+          "body": "{\n  \"elements\": [\n    {\n      \"element\": \"a\",\n      \"quantity\" : 0\n    },\n    {\n      \"element\": \"b\",\n      \"quantity\" : 2\n    },\n    {\n      \"element\": \"c\",\n      \"quantity\" : 3\n    },\n    ] \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "5c99fd31-1f51-4741-aa72-8339a419d0ca",
+          "body": "{\n  \"NOT FOUND\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a5d2b361-25ca-40fd-b0b4-dfec14117f46",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/1/inox",
+      "responses": [
+        {
+          "uuid": "4aeecbbf-4efd-4743-bdff-5ccb167e866b",
+          "body": "{\n  \"inox\": 20\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "d0dd3edc-4686-4d5b-881b-e2a01ece723b",
+          "body": "{\n  \"NOT FOUND\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "607aca87-e22e-4ea6-a6b7-aa3eae57fbdb",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "boosters/1",
+      "responses": [
+        {
+          "uuid": "90abac09-3d70-40ac-8c19-51f8fbc530f4",
+          "body": "{\n  \"explorer\": {\n    \"account\": {\n      \"email\": \"alex@hotmail.com\",\n      \"username\": \"alex\",\n      \"uuid\": \"a50975dd-9cc2-422c-8363-b33d0495dff9\",\n      \"inox\": 35,\n      \"allies\": \"http://localhost:3002/explorateurs/1/allies\",\n      \"location\": \"Montreal\",\n      \"href\": \"http://10.0.2.2:3002/accounts/651341a62367456080f2a054\",\n      \"elements\": [\n        {\n          \"element\": \"a\",\n          \"quantity\": 10\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 4\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 2\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 2\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        }\n      ],\n      \"boosters\": [\n        {\n          \"id\": 1,\n          \"price\": 45,\n          \"rarity\": \"common\",\n          \"buyMe\": \"http://10.0.2.2:3002/boosters/1\"\n        },\n        {\n          \"id\": 1,\n          \"price\": 80,\n          \"rarity\": \"uncommon\",\n          \"buyMe\": \"http://10.0.2.2:3002/boosters/2\"\n        }\n      ]\n    },\n    \"tokens\": {\n      \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzY0NDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.twlwDxGgS_lEEMgMeP2Xtq5LHeAqrTcZ6JvVouWaIIM\",\n      \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzgyNDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.XGXIbhCpDzHOjW-o9BEPUHNnOOVBc7lzoBSZC2NDSsE\"\n    }\n  },\n  \"boosterContent\": {\n    \"inox\": 45,\n    \"elements\": [\n      {\n        \"element\": \"a\",\n        \"quantity\": 0\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      }\n    ]\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1135a14f-48fb-4b89-90ff-930193f77da9",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/2/exploration",
+      "responses": [
+        {
+          "uuid": "b4b62070-07ac-4878-a942-2daee2fc9a20",
+          "body": "{\n  \"explorationDate\": \"2012-01-01T00:00:00.000Z\",\n  \"destination\": \"HERE\",\n  \"affinity\": \"\",\n  \"vault\": {},\n  \"ally\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9359b11b-99ac-468e-873b-34c217ce405b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "explorateurs/1/location",
+      "responses": [
+        {
+          "uuid": "c8d8011f-e709-40e9-b8dc-4e397030777e",
+          "body": "{\n  \n  \"location\": \"HERE\"\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "98e4c63d-de83-4615-a9f9-3fa40868275c",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "accounts/651341a62367456080f2a054",
+      "responses": [
+        {
+          "uuid": "2f154642-7aaf-4740-88ff-18fd66285047",
+          "body": "{\n  \"account\": {\n    \"email\": \"alex@hotmail.com\",\n    \"username\": \"alex\",\n    \"uuid\": \"a50975dd-9cc2-422c-8363-b33d0495dff9\",\n    \"inox\": 10,\n    \"allies\": \"http://10.0.2.2:3002/explorateurs/1/allies\",\n    \"location\": \"Montreal\",\n    \"href\": \"http://10.0.2.2:3002/accounts/651341a62367456080f2a054\",\n    \"elements\": [\n      {\n        \"element\": \"a\",\n        \"quantity\": 10\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      },\n      {\n        \"element\": \"fr\",\n        \"quantity\": 12\n      }\n    ],\n    \"boosters\": [\n      {\n        \"id\": 1,\n        \"price\": 45,\n        \"rarity\": \"common\",\n        \"buyMe\": \"http://10.0.2.2:3002/boosters/1\"\n      },\n      {\n        \"id\": 1,\n        \"price\": 80,\n        \"rarity\": \"uncommon\",\n        \"buyMe\": \"http://10.0.2.2:3002/boosters/2\"\n      }\n    ]\n  },\n  \"tokens\": {\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzY0NDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.twlwDxGgS_lEEMgMeP2Xtq5LHeAqrTcZ6JvVouWaIIM\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzgyNDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.XGXIbhCpDzHOjW-o9BEPUHNnOOVBc7lzoBSZC2NDSsE\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c37051b4-67a8-4d61-b6e3-5bf7c60b0cc6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "boosters/2",
+      "responses": [
+        {
+          "uuid": "3f2f0c66-4483-400a-9cdc-4ba57b35b929",
+          "body": "{\n  \"explorer\": {\n    \"account\": {\n      \"email\": \"alex@hotmail.com\",\n      \"username\": \"alex\",\n      \"uuid\": \"a50975dd-9cc2-422c-8363-b33d0495dff9\",\n      \"inox\": 35,\n      \"allies\": \"http://localhost:3002/explorateurs/1/allies\",\n      \"location\": \"Montreal\",\n      \"href\": \"http://10.0.2.2:3002/accounts/651341a62367456080f2a054\",\n      \"elements\": [\n        {\n          \"element\": \"a\",\n          \"quantity\": 10\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 4\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 2\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        },\n        {\n          \"element\": \"b\",\n          \"quantity\": 2\n        },\n        {\n          \"element\": \"fr\",\n          \"quantity\": 12\n        }\n      ],\n      \"boosters\": [\n        {\n          \"id\": 1,\n          \"price\": 45,\n          \"rarity\": \"common\",\n          \"buyMe\": \"http://10.0.2.2:3002/boosters/1\"\n        },\n        {\n          \"id\": 1,\n          \"price\": 80,\n          \"rarity\": \"uncommon\",\n          \"buyMe\": \"http://10.0.2.2:3002/boosters/2\"\n        }\n      ]\n    },\n    \"tokens\": {\n      \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzY0NDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.twlwDxGgS_lEEMgMeP2Xtq5LHeAqrTcZ6JvVouWaIIM\",\n      \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFiY2RlZmh1ZHNhaGJkc2hic3VnYWFhYnZhYXNhYXNkYXNhYSIsImlhdCI6MTY5NTc2MDgwNiwiZXhwIjoxNjk1NzgyNDA2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.XGXIbhCpDzHOjW-o9BEPUHNnOOVBc7lzoBSZC2NDSsE\"\n    }\n  },\n  \"boosterContent\": {\n    \"inox\": 45,\n    \"elements\": [\n      {\n        \"element\": \"a\",\n        \"quantity\": 0\n      },\n      {\n        \"element\": \"b\",\n        \"quantity\": 2\n      }\n    ]\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "93a240cf-67b5-46b0-9d91-9727ee8668a3"
+    },
+    {
+      "type": "route",
+      "uuid": "07afb159-c7ad-4fe0-b086-4497897adb79"
+    },
+    {
+      "type": "route",
+      "uuid": "c7f32c92-b1ce-4cc6-a516-4e0ff8ceeb8b"
+    },
+    {
+      "type": "route",
+      "uuid": "52e16b31-9f4d-43ac-ac09-ca85f72be0f5"
+    },
+    {
+      "type": "route",
+      "uuid": "a1698f30-6af8-4bef-8746-dab578a87fc7"
+    },
+    {
+      "type": "route",
+      "uuid": "38f14011-98c4-4fce-9308-1ef9e6d27aa3"
+    },
+    {
+      "type": "route",
+      "uuid": "a5d2b361-25ca-40fd-b0b4-dfec14117f46"
+    },
+    {
+      "type": "route",
+      "uuid": "607aca87-e22e-4ea6-a6b7-aa3eae57fbdb"
+    },
+    {
+      "type": "route",
+      "uuid": "1135a14f-48fb-4b89-90ff-930193f77da9"
+    },
+    {
+      "type": "route",
+      "uuid": "9359b11b-99ac-468e-873b-34c217ce405b"
+    },
+    {
+      "type": "route",
+      "uuid": "98e4c63d-de83-4615-a9f9-3fa40868275c"
+    },
+    {
+      "type": "route",
+      "uuid": "c37051b4-67a8-4d61-b6e3-5bf7c60b0cc6"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
